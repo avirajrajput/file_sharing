@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5f5f5</color>
+    <color name="colorPrimaryDark">#f5f5f5</color>
+    <color name="colorAccent">#6c7071</color>
+    <color name="Background_color">#1A1A1A</color>
+    <color name="white">#ffffff</color>
+    <color name="logIn_button_text">#B2B2B2</color>
+    <color name="google_gray">#6c7071</color>
+    <color name="light_gray">#9B9C9C</color>
+    <color name="s_white">#FAFAFA</color>
+    <color name="App_Green">#32de84</color>
+
+    <color name="black">#000000</color>
+    <color name="border_line">#C8C8C8</color>
+    <color name="background">#F2F2F7</color>
+
+    <color name="orange">#FF4500</color>
+
+    <color name="google_blue">#4285F4</color>
+
+    <color name="google_red">#DB4437</color>
+
+    <color name="google_yellow">#F4B400</color>
+
+    <color name="google_green">#0F9D58</color>
+
+    <color name="android_green">#78C257</color>
+    <color name="grey">#484848</color>
+    <color name="textGreyColor">#424242</color>
+    <color name="textGreyColor_light">#757575</color>
+    <color name="iconColor">#A9B4B7</color>
+
+    <color name="exLightGreen">#ddfada</color>
+    <color name="send_button">#00D0AA</color>
+    <color name="receive_button">#00BBCE</color>
+
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="MyThemeOverlayAlertDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_close_blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#DAE1E3"-->
+<!--                android:text="@string/enter_phone_number_to_send"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center">
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_contacts"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/google_blue" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/google_blue" />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/google_blue" />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/google_blue" />
+
+                <EditText
+                    android:id="@+id/editBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:textColorHint="@color/google_blue"
+                    android:textAlignment="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/google_blue"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background"
+            android:text="@string/continue2"
+            android:textAllCaps="false"
+            android:textColor="@color/google_blue" />
+    </RelativeLayout>
+</RelativeLayout>

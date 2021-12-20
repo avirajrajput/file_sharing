@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.ReceiverActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background">
+
+        <FrameLayout
+            android:id="@+id/profileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_back" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/rStatus"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="10sp"
+                            android:textColor="@color/textGreyColor"
+                            android:text="@string/app_name"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/discover_progressBar"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="5dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/done_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/done"
+                            android:visibility="gone"
+                            android:textColor="@color/google_blue"
+                            android:textSize="15sp"/>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/border_line"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/progress_complete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/LinearBlueProgressBar"
+            android:progress="0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/progress_complete"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_rawRes="@raw/receiver"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <RelativeLayout
+                android:id="@+id/itemPlace_r"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white">
+
+                <ListView
+                    android:id="@+id/receiveListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:divider="@null"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/qrButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_qr" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".activities.SettingsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/profile_liner_layout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/s_white"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/img_layout"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="30dp">
+                        <ImageView
+                            android:id="@+id/setting_profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/setting_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="Name"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="italic"
+                    android:textSize="10sp"
+                    android:text="'s profile"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/forward"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/tile_layout_01"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp"
+       android:layout_below="@+id/profile_liner_layout"
+       android:gravity="center">
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.1dp"
+
+           android:background="#C6C6C8"/>
+       <LinearLayout
+           android:id="@+id/tile_01"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center_vertical"
+           android:background="@color/s_white">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center_vertical">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginStart="25dp"
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/testingimg"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_height="wrap_content"
+                       android:text="tile1"/>
+
+               </LinearLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical">
+                   <ImageView
+                       android:layout_width="15dp"
+                       android:layout_height="15dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/forward"/>
+               </RelativeLayout>
+
+           </LinearLayout>
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.1dp"
+           android:layout_marginStart="50dp"
+           android:background="#C6C6C8"/>
+       <LinearLayout
+           android:id="@+id/tile_02"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/tile_01"
+           android:background="@color/s_white">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:gravity="center_vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_marginStart="25dp"
+                       android:gravity="center_vertical">
+
+                       <ImageView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:src="@drawable/testingimg"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_marginStart="10dp"
+                           android:layout_height="wrap_content"
+                           android:text="tile1"/>
+
+                   </LinearLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical">
+                       <ImageView
+                           android:layout_width="15dp"
+                           android:layout_height="15dp"
+                           android:layout_marginEnd="10dp"
+                           android:layout_alignParentEnd="true"
+                           android:src="@drawable/forward"/>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+       </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.1dp"
+           android:background="#C6C6C8"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tile_layout_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tile_layout_01"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#C6C6C8"/>
+        <LinearLayout
+            android:id="@+id/tile_03"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/s_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/testingimg"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="tile1"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/forward"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginStart="50dp"
+            android:background="#C6C6C8"/>
+        <LinearLayout
+            android:id="@+id/tile_04"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tile_03"
+            android:background="@color/s_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/testingimg"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="tile1"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/forward"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#C6C6C8"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tile_layout_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tile_layout_02"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#C6C6C8"/>
+        <LinearLayout
+            android:id="@+id/tile_05"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/s_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/testingimg"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="tile1"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/forward"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginStart="50dp"
+            android:background="#C6C6C8"/>
+        <LinearLayout
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tile_03"
+            android:background="@color/s_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/lock_gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/forward"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#C6C6C8"/>
+    </LinearLayout>
+<!--    <androidx.cardview.widget.Ca,mmjklkllkklbutton"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        android:layout_below="@+id/tile_layout_03"-->
+<!--        android:background="@color/s_white">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center">-->
+
+<!--            <ImageView-->
+    ;l;l;l;l
+<!--                android:id="@+id/lock_img"-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:src="@drawable/lock_gray"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Logout"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="8sp"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tile_layout_03"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textColor="@color/border_line"
+        android:textStyle="normal"
+        android:textSize="10sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/border_line"
+        android:text="@string/app_name"
+        android:textStyle="normal"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

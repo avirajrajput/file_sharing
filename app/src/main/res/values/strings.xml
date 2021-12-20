@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">File Sender</string>
+    <string name="button_continue">continue</string>
+    <string name="t_c"><u>Terms &amp; Conditions</u></string>
+    <string name="get_photos">Get Photos</string>
+    <string name="get_doc">Get Doc</string>
+    <string name="mb">MB</string>
+    <string name="slash">/</string>
+    <string name="zero">0</string>
+    <string name="todo">TODO</string>
+    <string name="send">send</string>
+    <string name="done">Done</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="try_again">Try Again</string>
+
+    <string name="authority">com.manacher.filesharing.provider</string>
+
+    <string name="delete">Delete</string>
+    <string name="delete_alert">Are you sure, You want to Delete this file ?</string>
+    <string name="search">search</string>
+    <string name="skip">skip</string>
+    <string name="offline">Offline</string>
+    <string name="files">Files</string>
+    <string name="login">LogIn</string>
+    <string name="mobile_number">mobile number</string>
+    <string name="online">Online</string>
+    <string name="please_provide_your_name_and_an_optional_profile_photo">Please provide your name and an optional profile photo.</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="enter_your_name">enter your name</string>
+    <string name="otp">OTP</string>
+    <string name="edit">Edit</string>
+    <string name="blank_number">+91----------</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="save">save</string>
+    <string name="enter_your_name_and_add_an_optional_profile_picture">Enter your name and add an optional profile picture.</string>
+    <string name="from">from</string>
+    <string name="receive">Receive</string>
+    <string name="send_1">Send</string>
+    <string name="contacts">Contacts</string>
+    <string name="name">Name</string>
+
+
+    <string name="connect">Connect</string>
+
+    <string name="a">A</string>
+    <string name="sendkite_online">SendKite Online</string>
+    <string name="sendkite_offline">SendKite Offline</string>
+    <string name="file_name">File Name</string>
+
+    <!--    collection names-->
+    <string name="users">users</string>
+    <string name="rooms">rooms</string>
+    <string name="rtcaller">rtcaller</string>
+    <string name="history_meta">history_meta</string>
+    <string name="history">history</string>
+    <string name="application_data">application_data</string>
+    <string name="home_wallpaper">home_wallpaper</string>
+
+    <string name="send_files_again"><![CDATA[Send Files Again >>]]></string>
+    <string name="sendkite">SendKite</string>
+    <string name="home">Home</string>
+    <string name="continue2">Continue</string>
+    <string name="confirm">confirm</string>
+    <string name="select_files_and_continue"><![CDATA[Select files and continue >>]]></string>
+
+    <!--    <string name="stun_server">stun:stun2.1.google.com:19302</string>-->
+
+
+    <string name="online_tag">online</string>
+    <string name="offline_tag">offline</string>
+
+    <string name="sender_tag">sender</string>
+    <string name="receiver_tag">receiver</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="www_sendkite_com">www.sendkite.com</string>
+    <string name="is_busy_please_try_again_later">" "is busy please try again later</string>
+    <string name="okay">Okay</string>
+
+    <string name="contact_tile">SendKite uses contacts</string>
+    <string name="contact_dis">to send files online</string>
+
+    <string name="storage_tile">SendKite uses storage</string>
+    <string name="storage_dis">to read and write data on memory</string>
+
+    <string name="microphone_tile">SendKite uses microphones</string>
+    <string name="microphone_dis">to communicate with others</string>
+
+    <string name="location_tile">SendKite uses location</string>
+    <string name="location_dis">to transfer file locally</string>
+
+    <string name="please_wait">please wait …</string>
+    <string name="this_number_is_not_registered_on_sendkite">This number is not registered on SendKite</string>
+    <string name="invite">Invite</string>
+    <string name="default_notification_channel_id">8126237019</string>
+
+    <string name="newCall">newCall</string>
+    <string name="endCall">endCall</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_share">Share App</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_privacy">Privacy Policy</string>
+
+<!--    Ads Units -->
+
+    <string name="banner_unit">ca-app-pub-7689035579062097/6602991312</string>
+    <string name="native_unit">ca-app-pub-7689035579062097/5673053026</string>
+    <string name="interstitial_unit">ca-app-pub-7689035579062097/9967521259</string>
+</resources>

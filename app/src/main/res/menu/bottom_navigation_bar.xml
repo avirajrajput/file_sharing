@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_nav_3"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/nav_files"
+        android:icon="@drawable/ic_files_nav_3"
+        android:title="@string/files"/>
+    </menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.FileExplorerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/File_ex_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners"
+                android:drawableEnd="@drawable/search_light_gray"
+                android:hint="@string/search"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/google_gray"
+                android:textColorHint="@color/light_gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/background" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/files_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/s_white"
+        android:src="@drawable/ic_back"
+        app:borderWidth="0dp"
+        app:fabSize="mini" />
+
+</RelativeLayout>

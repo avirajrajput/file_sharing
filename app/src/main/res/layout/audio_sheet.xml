@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AudioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/minus2"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/File_ex_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners"
+                android:hint="@string/search"
+                android:paddingEnd="10dp"
+                android:paddingStart="20dp"
+                android:drawableEnd="@drawable/search_light_gray"
+                android:textSize="15sp"
+                android:textColor="@color/google_gray"
+                android:textColorHint="@color/light_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/background"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialogs.DeleteBottomSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/App_Green"
+            android:text="@string/delete_alert"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_sheet_deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/google_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

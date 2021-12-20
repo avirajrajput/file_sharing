@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--                    android:scaleType="centerCrop"-->
+            <ImageView
+                android:id="@+id/green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_wave_green" />
+
+<!--            <ImageView-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/green"-->
+<!--                android:rotation="180"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/ic_wave_blue" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    app:cardBackgroundColor="@color/send_button"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/send"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/ic_send_button" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:text="SEND"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    app:cardBackgroundColor="@color/receive_button"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/receive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/ic_receive_button" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:text="RECEIVE"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_unit"></com.google.android.gms.ads.AdView>
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/my_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+</RelativeLayout>
+

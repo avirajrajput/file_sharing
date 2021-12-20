@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contact_parent"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/titleCard"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:cardCornerRadius="25dp"-->
+<!--            app:cardBackgroundColor="@color/google_blue">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/ic_flim">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/capitalLetters"-->
+<!--                    android:text="@string/a"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_blue_ring">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/capitalLetters"
+                    android:text="@string/a"
+                    android:textSize="25sp"
+                    android:textColor="#003A97"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Contact_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/Contact_text_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:textSize="12sp"
+                android:text="@string/phone_number"
+                android:textColor="@color/light_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/border_line"/>
+
+</RelativeLayout>

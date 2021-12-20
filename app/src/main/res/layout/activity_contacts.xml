@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContactsActivity">
+
+    <FrameLayout
+        android:id="@+id/contactToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/s_white"
+        app:layout_scrollFlags="scroll|enterAlways">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/textGreyColor"
+                        android:text="@string/contacts"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center">
+                    <ProgressBar
+                        android:id="@+id/progress_bar_contact"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    <View
+        android:id="@+id/under_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/contactToolbar"
+        android:background="@color/border_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/under_line"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/contact_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/corners"
+                android:drawableEnd="@drawable/search_light_gray"
+                android:hint="@string/search"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/google_gray"
+                android:textColorHint="@color/light_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/s_white"
+            android:padding="4dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/s_white"
+        android:backgroundTint="@color/s_white"
+        android:src="@drawable/ic_contacts"
+        app:borderWidth="0dp"
+        app:fabSize="normal" />
+</RelativeLayout>

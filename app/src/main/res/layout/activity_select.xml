@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.SelectActivity">
+
+    <FrameLayout
+        android:id="@+id/selectToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <include
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        layout="@layout/logo_layout"
+                        android:layout_marginEnd="35dp">
+
+                    </include>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/wifiIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/toolbar_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/selectToolbar"
+        android:background="@color/border_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_under_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/continueLayout"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/select_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dp"
+                android:background="@color/google_blue"
+                app:itemIconSize="25sp"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/select_navigation_bar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/fragment_place_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/container" />
+
+                <RelativeLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="@color/border_line" />
+
+                        <LinearLayout
+                            android:id="@+id/collectPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/background"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:background="#94BBFA"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/bag_icon" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/bag_listView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@color/background"
+                                    android:scrollbars="horizontal" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/continueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/light_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:text="@string/select_files_and_continue"
+                    android:textColor="#1967D3"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/select_continue_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/dis_button_background"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

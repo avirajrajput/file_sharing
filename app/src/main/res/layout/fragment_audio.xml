@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+   <LinearLayout
+       android:id="@+id/search_bar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:descendantFocusability="beforeDescendants"
+       android:focusableInTouchMode="true">
+
+      <EditText
+          android:id="@+id/File_ex_search_bar"
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:layout_margin="10dp"
+          android:background="@drawable/corners"
+          android:hint="@string/search"
+          android:paddingEnd="10dp"
+          android:paddingStart="20dp"
+          android:drawableEnd="@drawable/search_light_gray"
+          android:textSize="15sp"
+          android:textColor="@color/google_gray"
+          android:textColorHint="@color/light_gray"/>
+   </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/listView"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

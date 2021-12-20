@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/drawable/ic_files_sharing_logo.xml" value="0.22962962962962963" />
+        <entry key="app/src/main/res/drawable/ic_right.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/drawable/ic_wave_blue.xml" value="0.22407407407407406" />
+        <entry key="app/src/main/res/drawable/ic_wave_green.xml" value="0.22407407407407406" />
+        <entry key="app/src/main/res/drawable/ic_wave_wall.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/drawable/line_blue.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/drawable/round_top_orenge.xml" value="0.321025641025641" />
+        <entry key="app/src/main/res/drawable/select_circile.xml" value="0.20555555555555555" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/layout/Scan_dialog.xml" value="0.10148114815988128" />
+        <entry key="app/src/main/res/layout/accept_dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity2_send_onilne.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_discover.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_receiver.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_select.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_send_def.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19907407407407407" />
+        <entry key="app/src/main/res/layout/ask_disconnect_dialog.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/bag_item_view.xml" value="0.26851851851851855" />
+        <entry key="app/src/main/res/layout/calling_dialog.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/device_list_view.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/file_ex_view.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/files_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_apk.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_audio.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_delete_bottom_sheet.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_file.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_file_explorer.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_online.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_photos.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/installed_app_list.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/logo_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/meta_data_view.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/not_response_dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/offline_files_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/online_files_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/qr_dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/scan_dialog.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/send_data_view.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/send_online_toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/show_pic_dialog.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
